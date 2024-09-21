@@ -1,0 +1,27 @@
+line[1]:
+line[2]:1 09:00 time 1
+Day: 1
+Time: 09:00
+X: 1
+get
+line[3]:1 10:00 issue-specified 00001 1 2 5 2
+Day: 1
+Time: 10:00
+Reservation Number: 00001
+Reservation Date: 1
+Reservation Time: 2
+Reservation People: 5
+Table Number: 2
+line[4]:1 12:00 time 2
+Day: 1
+Time: 12:00
+X: 2
+delete
+get
+line[5]:1 15:00 time 3
+Day: 1
+Time: 15:00
+X: 3
+delete
+line[6]:
+line[7]:

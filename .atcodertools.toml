@@ -1,0 +1,4 @@
+exec_on_contest_dir='ln -s ../.vscode ./.vscode && code .'
+[codestyle]
+workspace_dir='/Users/yuki/Documents/atcoder3/atcoder-workspase'
+template_file='/Users/yuki/Documents/atcoder3/atcoder-workspace/template.cpp'

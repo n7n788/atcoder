@@ -1,0 +1,45 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "competitiveTestSample",
+            "type": "shell",
+            "command": "cd ${fileDirname} && g++ -O0 -std=c++20 -D_GLIBCXX_DEBUG -I ${workspaceFolder}/ac-library ${fileBasename} && atcoder-tools test",
+            "presentation": {
+              "reveal": "always",
+              "focus": true,
+              "panel": "shared",
+            }
+        },
+        {
+          "label": "competitiveSubmit",
+          "type": "shell",
+          "command": "cd ${fileDirname} && g++ -O0 -std=c++20 -D_GLIBCXX_DEBUG -I ${workspaceFolder}/ac-library ${fileBasename} && atcoder-tools submit -u",
+          "presentation": {
+            "reveal": "always",
+            "focus": true,
+            "panel": "shared",
+          }
+        },
+        {
+          "label": "Build with Clang",
+          "type": "shell",
+          "command": "clang++",
+          "args": [
+              "-std=c++17",
+              "-stdlib=libc++",
+              "-I${workspaceFolder}/ac-library",
+              "${fileDirname}/${fileBasename}",
+              "-o",
+              "a.out",
+              "--debug"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
+        }
+    ]
+}

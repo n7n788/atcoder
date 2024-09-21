@@ -1,0 +1,67 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            // "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            }
+        }
+    ]
+}
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "(lldb) Launch",
+//             "type": "lldb",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/a.out",
+//             "args": [],
+//             "cwd": "${workspaceFolder}",
+//             "preLaunchTask": "Build with Clang"
+//         }
+//     ]
+// }
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//       {
+//         "name": "lldb Debug", //nameは何でも大丈夫です
+//         "type": "lldb", //typeをlldbにすることでCodeLLDBが使えるそうです
+//         "request": "launch",
+//         "program": "${workspaceFolder}/a.out",
+//         "args": [],
+//       }
+//     ]
+//   }
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "(lldb) Launch",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/a.out",
+//             "cwd": "${workspaceFolder}",
+//             // "preLaunchTask": "C/C++: Build with GCC"
+//         }
+//     ]
+// }
